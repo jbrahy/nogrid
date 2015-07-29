@@ -1,0 +1,55 @@
+.nogrid-container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.nogrid-container *,
+.nogrid-container *:before,
+.nogrid-container *:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+		      box-sizing: border-box;
+}
+
+.nogrid-row:before,
+.nogrid-row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+[class*='nogrid-col-'] {
+	float: left;
+	padding: 10px;
+	min-height: 1px;
+}
+
+.nogrid-col-10  { width: 10%;  }
+.nogrid-col-20  { width: 20%;  }
+.nogrid-col-30  { width: 30%;  }
+.nogrid-col-40  { width: 40%;  }
+.nogrid-col-50  { width: 50%;  }
+.nogrid-col-60  { width: 60%;  }
+.nogrid-col-70  { width: 70%;  }
+.nogrid-col-80  { width: 80%;  }
+.nogrid-col-90  { width: 90%;  }
+.nogrid-col-100 { width: 100%; }
+
+@media all and (max-width: 800px) {
+	.nogrid-col-10, .nogrid-col-20, .nogrid-col-30, .nogrid-col-40 {
+		width: 50%;
+	}
+	.nogrid-col-60, .nogrid-col-70, .nogrid-col-80, .nogrid-col-90 {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 650px) {
+	.nogrid-col-10, .nogrid-col-20 {
+		width: 50%;
+	}
+	.nogrid-col-30, .nogrid-col-40, .nogrid-col-50, .nogrid-col-60,
+	.nogrid-col-70, .nogrid-col-80, .nogrid-col-90 {
+		width: 100%;
+	}
+}

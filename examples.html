@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>nogrid</title>
+
+		<link rel="stylesheet" href="css/nogrid.css">
+
+		<style>
+			body {
+				font-family: Helvetica, Arial, sans-serif;
+				font-size: 16px;
+				font-weight: bold;
+			}
+
+			.yellow-bg { background-color: #ffff00; }
+			.red-bg { background-color: #ff0000; }
+			.blue-bg { background-color: #0000ff; color: #fff; }
+			.green-bg { background-color: #00ff00; }
+			.purple-bg { background-color: #ff00ff; }
+		</style>
+	</head>
+
+	<body>
+		<div class="nogrid-container">
+			<div class="nogrid-row">
+				<div class="nogrid-col-100 yellow-bg">.nogrid-col-100 - 100% across all devices</div>
+			</div>
+
+			<div class="nogrid-row">
+				<div class="nogrid-col-90 red-bg">.nogrid-col-90 - 90% across screens > 800px, 100% across smaller screens</div>
+			</div>
+
+			<div class="nogrid-row">
+				<div class="nogrid-col-80 blue-bg">.nogrid-col-80 - 80% across screens > 800px, 100% across smaller screens</div>
+			</div>
+
+			<div class="nogrid-row">
+				<div class="nogrid-col-70 green-bg">.nogrid-col-70 - 70% across screens > 800px, 100% across smaller screens</div>
+			</div>
+
+			<div class="nogrid-row">
+				<div class="nogrid-col-60 purple-bg">.nogrid-col-60 - 60% across screens > 800px, 100% across smaller screens</div>
+			</div>
+
+			<div class="nogrid-row">
+				<div class="nogrid-col-50 yellow-bg">.nogrid-col-50 - 50% across screens > 650px, 100% across smaller screens</div>
+			</div>
+
+			<div class="nogrid-row">
+				<div class="nogrid-col-40 red-bg">.nogrid-col-40 - 40% across screens > 800px, 50% across screens < 800px but > 650px, 100% across smaller screens</div>
+			</div>
+
+			<div class="nogrid-row">
+				<div class="nogrid-col-30 blue-bg">.nogrid-col-30 - 30% across screens > 800px, 50% across screens < 800px but > 650px, 100% across smaller screens</div>
+			</div>
+
+			<div class="nogrid-row">
+				<div class="nogrid-col-20 green-bg">.nogrid-col-20 - 20% across screens > 800px, 50% across smaller screens</div>
+			</div>
+
+			<div class="nogrid-row">
+				<div class="nogrid-col-10 purple-bg">.nogrid-col-10 - 10% across screens > 800px, 50% across smaller screens</div>
+			</div>
+		</div>
+	</body>
+
+</html>
